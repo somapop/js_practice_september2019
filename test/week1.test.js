@@ -1,12 +1,12 @@
 const {
-  capitalize,
+  capitalize,  //pass
   generateInitials,
   addVAT,
   getSalePrice,
-  getMiddleCharacter,
+  getMiddleCharacter, //pass
   reverseWord,
   reverseAllWords,
-  countLinuxUsers,
+  countLinuxUsers, //pass
   getMeanScore,
   simpleFizzBuzz
 } = require("../challenges/week1");
@@ -99,7 +99,7 @@ describe("reverseAllWords", () => {
   });
 });
 
-describe("countLinuxUsers", () => {
+describe.only("countLinuxUsers", () => {
   test("returns 0 if no Linux users found", () => {
     const users = [
       { name: "Heather", OS: "Windows 8", type: "Windows" },
